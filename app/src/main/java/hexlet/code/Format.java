@@ -9,7 +9,8 @@ import java.util.Map;
 
 
 public class Format {
-    public static String formatStyle(Map<String, Object> filePath1, Map<String, Object> filePath2, String format) throws IOException {
+    public static String formatStyle(Map<String, Object> filePath1, Map<String,
+            Object> filePath2, String format) throws IOException {
         switch (format) {
             case "stylish":
                 return Stylish.formatStylish(filePath1, filePath2, format);

@@ -9,7 +9,8 @@ import java.util.List;
 
 
 public class Plain {
-    public static String formatPlain(Map<String, Object> file1, Map<String, Object> file2, String format) throws IOException {
+    public static String formatPlain(Map<String, Object> file1, Map<String,
+            Object> file2, String format) throws IOException {
 
         Set<String> keysFromFile = new TreeSet<>(file1.keySet());
         keysFromFile.addAll(file2.keySet());
