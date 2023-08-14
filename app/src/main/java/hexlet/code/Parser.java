@@ -9,7 +9,7 @@ import java.util.Map;
 public class Parser {
     public static Map<String, Object> parser(String content) throws IOException {
 
-        ObjectMapper objectMapper = new ObjectMapper();
+        ObjectMapper objectMapper = new ObjectMapper(new YAMLFactory());
         return objectMapper.readValue(content, new TypeReference<>() {
         });
     }

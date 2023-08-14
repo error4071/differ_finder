@@ -16,11 +16,11 @@ jacocoTestReport {
     }
 }
 compileJava {
-    options.release = 20
+    options.release = 18
 }
 
-group = 'hexlet.code'
-version = '1.0-SNAPSHOT'
+group 'hexlet.code'
+version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
@@ -37,7 +37,6 @@ dependencies {
     annotationProcessor 'info.picocli:picocli-codegen:4.7.3'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.10.0'
     implementation 'org.assertj:assertj-core-java8:1.0.0m1'
-
 }
 
 test {

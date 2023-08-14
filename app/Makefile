@@ -1,5 +1,8 @@
 .DEFAULT_GOAL := build-run
 
+run-dist:
+	./build/install/app/bin/app src/test/resources/file1.json src/test/resources/file2.json
+
 clean:
 	./gradlew clean
 

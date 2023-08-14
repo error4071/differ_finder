@@ -10,14 +10,14 @@ import java.util.Map;
 import java.util.List;
 
 public class Format {
-    public static String formatStyle(Map <String, Object> file1, Map <String, Object> file2, String format) throws IOException {
+    public static String formatStyle(Map <String, Object> filePath1, Map <String, Object> filePath2, String format) throws IOException {
         switch (format) {
             case "stylish":
-                return Stylish.formatStylish(file1, file2, format);
+                return Stylish.formatStylish(filePath1, filePath2, format);
             case "plain":
-                return Plain.formatPlain(file1, file2, format);
+                return Plain.formatPlain(filePath1, filePath2, format);
             case "json":
-                return Json.formatJson(file1, file2, format);
+                return Json.formatJson(filePath1, filePath2, format);
             default:
                 throw new Error("Unknown format: " + format);
         }
