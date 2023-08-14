@@ -8,10 +8,10 @@ public class DiffResult {
         this.file1 = file1;
         this.file2 = file2;
     }
-    public Object getFile1() {
+    public final Object getFile1() {
         return file1;
     }
-    public Object getFile2() {
+    public final Object getFile2() {
         return file2;
     }
 }
