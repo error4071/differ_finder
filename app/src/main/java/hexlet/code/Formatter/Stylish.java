@@ -7,7 +7,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public class Stylish {
-    public static String formatStylish(Map <String, Object> filePath1, Map <String, Object> filePath2, String format) throws IOException {
+    public static String formatStylish(Map<String, Object> filePath1, Map<String, Object> filePath2, String format) throws IOException {
 
         Set<String> keysFromFile = new TreeSet<>(filePath1.keySet());
         keysFromFile.addAll(filePath2.keySet());

@@ -1,6 +1,5 @@
 package hexlet.code;
 
-
 public class DiffResult {
     private final Object file1;
     private final Object file2;

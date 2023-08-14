@@ -1,10 +1,11 @@
 package hexlet.code;
 
-import java.util.concurrent.Callable;
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 import picocli.CommandLine.Parameters;
+
+import java.util.concurrent.Callable;
 @Command(name = "gendiff", mixinStandardHelpOptions = true, version = "gendiff",
         description = "Compares two configuration files and shows a difference.")
 
@@ -16,12 +17,13 @@ public final class App implements Callable<Integer> {
     private String filePath1;
     @Parameters(paramLabel = "filepath2", index = "1", description = "path to second file")
     private String filePath2;
-    @Option(names = {"-f", "--format"}, paramLabel = "format", description = "output format: [default: stylish]", defaultValue = "stylish")
+    @Option(names = {"-f", "--format"}, paramLabel = "format", description = "output format: [default: stylish]",
+            defaultValue = "stylish")
     private String format;
     @Option(names = {"-h", "--help"}, usageHelp = true, description = "Show this help message and exit.")
-    boolean usageHelpRequested;
+    private boolean usageHelpRequested;
     @Option(names = {"-V", "--version"}, versionHelp = true, description = "Print version information and exit.")
-    boolean versionInfoRequested;
+    private boolean versionInfoRequested;
 
     public static void main(String[] args) {
         int exitCode = new CommandLine(new App()).execute(args);
@@ -29,7 +31,7 @@ public final class App implements Callable<Integer> {
     }
 
     @Override
-    public Integer call() throws Exception{
+    public Integer call() throws Exception {
         try {
             String formattedDiff = Differ.generate(filePath1, filePath2, format);
             System.out.println(formattedDiff);

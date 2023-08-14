@@ -1,9 +1,17 @@
 package hexlet.code;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.Map;
+import java.util.List;
+import java.util.LinkedHashMap;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.ArrayList;
+import java.util.Objects;
+
 public class JsonDiffer {
-    public static String formatJsonDiffer(Map<String, Object> file1, Map<String, Object> file2, String format) throws IOException {
+    public static String formatJsonDiffer(Map<String, Object> file1,
+                                          Map<String, Object> file2, String format) throws IOException {
 
         List<Map<String, Object>> result = new ArrayList<>();
         Set<String> keysFromFile = new TreeSet<String>(file1.keySet());
