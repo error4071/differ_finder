@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="852d82e8-b4c7-4fe4-b994-3624cb58f517" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/DiffResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/DiffResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/Differ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/Differ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/Format.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/Format.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/Formatter/Json.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/Formatter/Json.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/Formatter/Plain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/Formatter/Plain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/Formatter/Stylish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/Formatter/Stylish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hexlet/code/DifferTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hexlet/code/DifferTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +60,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "android.gradle.sync.needed": "true",
+    "last_opened_file_path": "//wsl$/Ubuntu/home/java-project-71/app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
