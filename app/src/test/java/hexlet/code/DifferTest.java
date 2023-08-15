@@ -3,7 +3,6 @@ package hexlet.code;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -57,7 +56,7 @@ public class DifferTest {
         assertThat(result).isEqualTo(jsonCorrectResult);
     }
     @Test
-    public void ymlTestDefault() throws IOException {
+    public void ymlTestDefault() throws Exception {
         file1yml = "./src/test/resources/yml/file1.yml";
         file2yml = "./src/test/resources/yml/file2.yml";
         String result = Differ.generate(file1yml, file2yml, defaultFormat);
