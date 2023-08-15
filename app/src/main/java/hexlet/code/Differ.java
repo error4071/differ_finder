@@ -1,13 +1,12 @@
 package hexlet.code;
 
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Map;
 
 public class Differ {
-    public static String generate(String filePath1, String filePath2, String format) throws IOException {
+    public static String generate(String filePath1, String filePath2, String format) throws Exception {
 
         Path getObjectFile1 = Paths.get(filePath1);
         Path getFile1Location = getObjectFile1.toAbsolutePath().normalize();
