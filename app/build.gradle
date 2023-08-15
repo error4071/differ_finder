@@ -6,8 +6,6 @@ plugins {
     id 'jacoco'
 }
 
-
-
 application {
     mainClass = 'hexlet.code.App'
 }
