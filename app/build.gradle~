@@ -17,7 +17,6 @@ jacocoTestReport {
 }
 compileJava {
     options.release = 20
-    options.encoding = 'UTF-8'
 }
 
 group 'hexlet.code'
