@@ -20,8 +20,7 @@ public class Stylish {
             } else if (!filePath1.containsKey(key) && (filePath2.containsKey((key)))) {
                 result += String.format("  + " + key + ": " + filePath2.get(key)) + "\n";
             } else if (!Objects.equals(filePath1.get(key), filePath2.get(key))) {
-                result += String.format("  - " + key + ": " + filePath1.get(key)
-                        + "\n" + "  + " + key + ": " + filePath2.get(key)) + "\n";
+                result += String.format("  - " + key + ": " + filePath1.get(key) + "\n" + "  + " + key + ": " + filePath2.get(key)) + "\n";
             } else {
                 result += String.format("    " + key + ": " + filePath1.get(key)) + "\n";
             }
