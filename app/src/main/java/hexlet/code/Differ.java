@@ -16,8 +16,8 @@ public class Differ {
         Path getFile2Location = getObjectFile2.toAbsolutePath().normalize();
         String content2 = Files.readString((getFile2Location));
 
-        Map<String, Object> file1 = Parser.parser(content1);
-        Map<String, Object> file2 = Parser.parser(content2);
+        Map<String, Object> file1 = Parser.parser(content1, format);
+        Map<String, Object> file2 = Parser.parser(content2, format);
 
         return Format.formatStyle(file1, file2, format);
     }
@@ -25,3 +25,4 @@ public class Differ {
         return generate(filePath1, filePath2, "stylish");
     }
 }
+
