@@ -29,7 +29,7 @@ public class Differ {
         Map<String, Object> map1 = Parser.parser(data1, content1);
         Map<String, Object> map2 = Parser.parser(data2, content2);
 
-	return Format.formatStyle(map1, map2, format).trim();
+        return Format.formatStyle(map1, map2, format).trim();
     }
     public static String generate(String filePath1, String filePath2) throws Exception {
         return generate(filePath1, filePath2, "stylish");
