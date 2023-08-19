@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class Differ {
     public static Path getAbsolutePath(String filePath) {
-	return Paths.get(filePath).toAbsolutePath().normalize();
+        return Paths.get(filePath).toAbsolutePath().normalize();
     }
 
     public static String getData(String filePath) throws Exception {
