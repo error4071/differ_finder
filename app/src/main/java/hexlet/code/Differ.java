@@ -26,8 +26,8 @@ public class Differ {
         String content1 = getExtension(filePath1);
         String content2 = getExtension(filePath2);
 
-	Map<String, Object> map1 = Parser.parser(data1, content1);
-	Map<String, Object> map2 = Parser.parser(data2, content2);
+        Map<String, Object> map1 = Parser.parser(data1, content1);
+        Map<String, Object> map2 = Parser.parser(data2, content2);
 
 	return Format.formatStyle(map1, map2, format).trim();
     }
