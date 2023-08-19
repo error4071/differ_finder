@@ -2,7 +2,6 @@ package hexlet.code.Formatter;
 
 import hexlet.code.DifferFinder;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import hexlet.code.JsonDiffer;
 
 import java.io.IOException;
 import java.util.Map;
