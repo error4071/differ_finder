@@ -26,6 +26,6 @@ public class Stylish {
                 result += String.format("    " + key + ": " + filePath1.get(key)) + "\n";
             }
         }
-        return result + "}";
+        return result + "}".trim();
     }
 }

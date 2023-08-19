@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class DifferFinder {
-    public static String DifferFinder(Map<String, Object> file1,
+    public static List<Map<String, Object>> differFinder(Map<String, Object> file1,
                                           Map<String, Object> file2, String format) throws IOException {
 
         List<Map<String, Object>> result = new ArrayList<>();
@@ -39,6 +39,6 @@ public class DifferFinder {
             }
             result.add(map);
         }
-        return result.toString();
+        return result;
     }
 }
