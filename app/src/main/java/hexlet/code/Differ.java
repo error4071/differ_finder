@@ -4,12 +4,11 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Map;
-import java.util.List;
+
 
 public class Differ {
     public static Path getAbsolutePath(String filePath) {
-	
-        return Paths.get(filePath).toAbsolutePath().normalize();
+	return Paths.get(filePath).toAbsolutePath().normalize();
     }
 
     public static String getData(String filePath) throws Exception {
@@ -31,7 +30,7 @@ public class Differ {
 	Map<String, Object> map2 = Parser.parser(data2, content2);
 
 	return Format.formatStyle(map1, map2, format).trim();
-}
+    }
     public static String generate(String filePath1, String filePath2) throws Exception {
         return generate(filePath1, filePath2, "stylish");
     }
