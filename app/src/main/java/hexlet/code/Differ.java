@@ -27,12 +27,11 @@ public class Differ {
         }
 
         String content = Files.readString(fullPath);
-        String dataFormat = getDataFormat(filePath);
+        String dataFormat = getExtension(filePath);
 
         return Parser.parser(content, dataFormat);
     }
 
-    }
     public static String generate(String filePath1, String filePath2) throws Exception {
         return generate(filePath1, filePath2);
     }
