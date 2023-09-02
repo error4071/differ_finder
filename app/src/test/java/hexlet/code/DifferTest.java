@@ -31,56 +31,56 @@ public class DifferTest {
     public void jsonTestDefault() throws Exception {
         file1 = "./src/test/resources/json/file1.json";
         file2 = "./src/test/resources/json/file2.json";
-        String result = Differ.generate(file1, file2);
+        String result = Differ.generate(file1, file2, defaultFormat);
         assertThat(result).isEqualTo(correctResult);
     }
     @Test
     public void jsonTestStylish() throws Exception {
         file1 = "./src/test/resources/json/file1.json";
         file2 = "./src/test/resources/json/file2.json";
-        String result = Differ.generate(file1, file2);
+        String result = Differ.generate(file1, file2, "stylish");
         assertThat(result).isEqualTo(correctResult);
     }
     @Test
     public void jsonTestPlain() throws Exception {
         file1 = "./src/test/resources/json/file1.json";
         file2 = "./src/test/resources/json/file2.json";
-        String result = Differ.generate(file1, file2);
+        String result = Differ.generate(file1, file2, "plain");
         assertThat(result).isEqualTo(plainCorrectResult);
     }
     @Test
     public void jsonTestJson() throws Exception {
         file1 = "./src/test/resources/json/file1.json";
         file2 = "./src/test/resources/json/file2.json";
-        String result = Differ.generate(file1, file2);
+        String result = Differ.generate(file1, file2, "json");
         assertThat(result).isEqualTo(jsonCorrectResult);
     }
     @Test
     public void ymlTestDefault() throws Exception {
         file1yml = "./src/test/resources/yml/file1.yml";
         file2yml = "./src/test/resources/yml/file2.yml";
-        String result = Differ.generate(file1yml, file2yml);
+        String result = Differ.generate(file1yml, file2yml, defaultFormat);
         assertThat(result).isEqualTo(ymlCorrectResult);
     }
     @Test
     public void ymlTestStylish() throws Exception {
         file1yml = "./src/test/resources/yml/file1.yml";
         file2yml = "./src/test/resources/yml/file2.yml";
-        String result = Differ.generate(file1yml, file2yml);
+        String result = Differ.generate(file1yml, file2yml, "stylish");
         assertThat(result).isEqualTo(ymlCorrectResult);
     }
     @Test
     public void ymlTestPlain() throws Exception {
         file1yml = "./src/test/resources/yml/file1.yml";
         file2yml = "./src/test/resources/yml/file2.yml";
-        String result = Differ.generate(file1yml, file2yml);
+        String result = Differ.generate(file1yml, file2yml, "plain");
         assertThat(result).isEqualTo(plainCorrectResult);
     }
     @Test
     public void ymlTestJson() throws Exception {
         file1yml = "./src/test/resources/yml/file1.yml";
         file2yml = "./src/test/resources/yml/file2.yml";
-        String result = Differ.generate(file1yml, file2yml);
+        String result = Differ.generate(file1yml, file2yml, "json");
         assertThat(result).isEqualTo(jsonCorrectResult);
     }
 }

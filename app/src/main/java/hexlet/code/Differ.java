@@ -11,7 +11,7 @@ public class Differ {
         return Paths.get(filePath).toAbsolutePath().normalize();
     }
 
-    public static String getInfo(String filePath) throws Exception {
+    public static String getData(String filePath) throws Exception {
         return Files.readString(getAbsolutePath(filePath));
     }
 
@@ -19,20 +19,20 @@ public class Differ {
         return filePath.substring(filePath.lastIndexOf(".") + 1);
     }
 
-        private static Map getData(String filePath) throws Exception {
-        Path fullPath = getAbsolutePath(filePath);
+    public static String generate(String filePath1, String filePath2, String format) throws Exception {
+        String data1 = getData(filePath1);
+        String data2 = getData(filePath2);
 
-        if (!Files.exists(fullPath)) {
-            throw new Exception("File '" + fullPath + "' does not exist");
-        }
+        String content1 = getExtension(filePath1);
+        String content2 = getExtension(filePath2);
 
-        String content = Files.readString(fullPath);
-        String dataFormat = getExtension(filePath);
+        Map<String, Object> map1 = Parser.parser(data1, content1);
+        Map<String, Object> map2 = Parser.parser(data2, content2);
 
-        return Parser.parser(content, dataFormat);
+        return Format.formatStyle(map1, map2, format).trim();
     }
-
     public static String generate(String filePath1, String filePath2) throws Exception {
-        return generate(filePath1, filePath2);
+        return generate(filePath1, filePath2, "stylish");
     }
 }
+
