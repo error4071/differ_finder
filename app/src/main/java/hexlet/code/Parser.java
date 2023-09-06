@@ -9,23 +9,23 @@ import java.io.IOException;
 import java.util.Map;
 
 public class Parser {
-    public static Map<String, Object> parser(String fileContent, String fileFormat) throws IOException {
-        return switch (fileFormat) {
-            case "json" -> getDataJson(fileContent);
-            case "yml", "yaml" -> getDataYaml(fileContent);
-            default -> throw new IOException("Unknown file extension! -> " + fileFormat);
+    public static Map parser(String content, String dataFormat) throws IOException {
+        return switch (dataFormat) {
+            case "json" -> getDataJson(content);
+            case "yml", "yaml" -> getDataYaml(content);
+            default -> throw new IOException("Unknown file extension! -> " + dataFormat);
         };
     }
 
-    private static Map<String, Object> getDataJson(String fileContent) throws IOException {
-        ObjectMapper jm = new JsonMapper();
+    private static Map getDataJson(String content) throws IOException {
+        ObjectMapper jsonMapper = new JsonMapper();
 
-        return jm.readValue(fileContent, new TypeReference<>() { });
+        return jsonMapper.readValue(content, new TypeReference<>() { });
     }
 
-    private static Map<String, Object> getDataYaml(String fileContent) throws IOException {
-        ObjectMapper ym = new YAMLMapper();
+    private static Map getDataYaml(String content) throws IOException {
+        ObjectMapper ymlMapper = new YAMLMapper();
 
-        return ym.readValue(fileContent, new TypeReference<>() { });
+        return ymlMapper.readValue(content, new TypeReference<>() { });
     }
 }
