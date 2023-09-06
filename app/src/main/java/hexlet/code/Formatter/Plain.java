@@ -29,7 +29,7 @@ public class Plain {
                 result += String.format("Property '" + key + "' was updated. From " + key1 + " to " + key2) + "\n";
             }
         }
-        return result.toString() + "\n";
+        return result.toString() + "\n".trim();
     }
 
     public static String complexValue(Object value) {
