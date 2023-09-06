@@ -17,7 +17,7 @@ public class Format {
             case "plain":
                 return Plain.formatPlain(filePath1, filePath2, format);
             case "json":
-                return Json.formatJson(filePath1, filePath2);
+                return Json.formatJson(filePath1, filePath2, format);
             default:
                 throw new Error("Unknown format: " + format);
         }
