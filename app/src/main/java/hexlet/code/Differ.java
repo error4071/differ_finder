@@ -29,9 +29,7 @@ public class Differ {
         Map<String, Object> map1 = Parser.parser(dataContent1, content1);
         Map<String, Object> map2 = Parser.parser(dataContent2, content2);
 
-		List<Map<String, Object>> result = DifferFinder.differFinder(map1, map2);
-
-        return DifferFinder.differFinder(result, format);
+        return DifferFinder.differFinder(map1, map2, format).toString();
     }
     public static String generate(String filePath1, String filePath2) throws Exception {
         return generate(filePath1, filePath2, "stylish");
