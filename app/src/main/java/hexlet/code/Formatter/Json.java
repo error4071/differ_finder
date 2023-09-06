@@ -8,8 +8,8 @@ import java.util.Map;
 
 public class Json {
     public static String formatJson(Map<String, Object> file1, Map<String,
-            Object> file2, String format) throws IOException {
+            Object> file2) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
-        return objectMapper.writeValueAsString(DifferFinder.differFinder(file1, file2, format)).trim();
+        return objectMapper.writeValueAsString(DifferFinder.differFinder(file1, file2));
     }
 }

@@ -11,7 +11,7 @@ import java.util.Objects;
 
 public class DifferFinder {
     public static List<Map<String, Object>> differFinder(Map<String, Object> data1,
-                                          Map<String, Object> data2, String format) throws IOException {
+                                          Map<String, Object> data2) throws IOException {
 
         List<Map<String, Object>> result = new ArrayList<>();
         Set<String> keysFromFile = new TreeSet<String>(data1.keySet());
