@@ -19,7 +19,7 @@ public class Format {
                 return Json.formatJson(difference);
             default:
                 throw new Error("Unknown format: " + format);
-            }
-        } 
-    } 
+        }
+    }
+}
 

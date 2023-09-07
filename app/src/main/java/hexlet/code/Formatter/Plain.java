@@ -7,7 +7,7 @@ import java.util.List;
 public class Plain {
     public static String formatPlain(List<Map<String, Object>> difference) {
 
-      StringBuilder result = new StringBuilder();
+        StringBuilder result = new StringBuilder();
         for (Map<String, Object> differences : difference) {
             switch (differences.get("status").toString()) {
                 case "removed" -> result.append("Property ").append("'")
@@ -29,7 +29,7 @@ public class Plain {
         return result.toString().trim();
     }
 
-  public static String complexValue(Object value) {
+    public static String complexValue(Object value) {
         if (value instanceof Map || value instanceof List) {
             return "[complex value]";
         } else if (value == null) {
