@@ -31,7 +31,7 @@ public class Differ {
 
         List<Map<String, Object>> result = DifferFinder.differFinder(map1, map2, format);
 
-        return Format.formatStyle(map1, map2, format).toString().trim();
+        return Format.formatStyle(result, format).toString().trim();
     }
     public static String generate(String filePath1, String filePath2) throws Exception {
         return generate(filePath1, filePath2, "stylish");
