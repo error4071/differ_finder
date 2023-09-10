@@ -20,11 +20,11 @@ public class Stylish {
                             .append(differences.get("oldValue")).append("\n");
                     result.append("  + ").append(differences.get("key")).append(": ")
                             .append(differences.get("newValue")).append("\n");
-                    }
-                default -> throw new Error("Unknown state!");
                 }
+                default -> throw new Error("Unknown state!");
             }
-        
+        }
+
         result.append("}");
         return result.toString();
     }
