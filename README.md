@@ -4,12 +4,12 @@
 ## Description:
 Fast, small and simple CLI-application to compare content of two configurations files. The result of the comparison will be displayed on the screen after the operation is completed.
 <hr>
-__Supported file formats:__
+Supported file formats:
 
 * .json;
 * .yml (.yaml)
 
-** Supported result formats:**
+Supported result formats:
 
 * stylish (default)
 * plain text
