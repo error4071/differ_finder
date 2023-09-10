@@ -9,3 +9,9 @@
 
 [![asciicast](https://asciinema.org/a/ItE8t2j0sCCj3AszLDhpiH7gd.svg)](https://asciinema.org/a/ItE8t2j0sCCj3AszLDhpiH7gd)
 
+Описание
+Консольная утилита, определяющая разницу между двумя структурами данных.
+
+Возможности утилиты:
+Поддержка разных входных форматов: yaml/yml и json
+Генерация отчета в виде plain text, stylish и json
