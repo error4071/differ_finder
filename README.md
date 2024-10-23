@@ -46,6 +46,6 @@ Java, Gradle, GNU Make, Checkstyle, JUnit, Jacoco, GitHub Actions, Code Climate.
 > make run-dist
 
 
-Author
+#### Author
 Sergey Tsoy / error4071
 
